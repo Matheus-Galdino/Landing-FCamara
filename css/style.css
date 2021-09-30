@@ -48,7 +48,7 @@ nav {
 }
 
 section {
-  height: 95vh;
+  min-height: 95vh;
   padding: 2rem 3rem;
   text-align: center;
 }
@@ -86,20 +86,6 @@ section {
   color: var(--clr-primary);
 }
 
-#hero .cta-btn {
-  padding: 1rem 3rem;
-  display: inline-block;
-  margin: 3rem 0 min(5vh, 3rem);
-
-  color: #fff;
-  background: var(--clr-primary);
-
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-decoration: none;
-  border-radius: 99999px;
-}
-
 #hero h2 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
@@ -118,9 +104,110 @@ section {
 }
 
 #how-to-back {
-  background-color: paleturquoise;
+  background-color: #fdfdfd;
+}
+
+#how-to-back h2 {
+  font-size: 2.7rem;
+  margin-bottom: 2rem;
+  color: var(--clr-primary);
 }
 
 #protocols {
   background-color: red;
+}
+
+.accordion {
+  max-height: 6rem;
+
+  cursor: pointer;
+  overflow: hidden;
+  padding: 1.5rem 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.accordion.active {
+  max-height: 100rem;
+
+  border-radius: 1em;
+  background: #f5f4fb;
+}
+
+.accordion:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.accordion-title,
+.accordion-content {
+  display: grid;
+  column-gap: 2rem;
+  align-items: center;
+  justify-items: start;
+  grid-template-columns: 2.5rem 1fr;
+}
+
+.accordion-title {
+  min-height: 4rem;
+  pointer-events: none;
+}
+
+.accordion-title p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+.accordion-title .material-icons {
+  font-size: 3rem;
+  color: var(--clr-primary);
+}
+
+.accordion:not(.active) .remove {
+  display: none;
+}
+
+.accordion.active .add {
+  display: none;
+}
+
+.accordion.active .material-icons {
+  background: #fff;
+  border-radius: 50%;
+}
+
+.accordion .accordion-content {
+  max-height: 0;
+  transition: all 0.2s ease-in;
+}
+
+.accordion.active .accordion-content {
+  display: grid;
+  margin-top: 1rem;
+  max-height: 100rem;
+}
+
+.accordion-content p {
+  grid-column: 2 / 3;
+
+  text-align: start;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+
+.cta-btn {
+  padding: 1rem 3rem;
+  display: inline-block;
+  margin: 3rem 0 min(5vh, 3rem);
+
+  color: #fff;
+  background: var(--clr-primary);
+
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 99999px;
+}
+
+.hashtag {
+  color: #7c74fc;
 }
