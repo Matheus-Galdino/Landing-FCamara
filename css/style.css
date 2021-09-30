@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+
+  height: 5vh;
+  background-color: #fff;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.theme-switch {
+  display: grid;
+  place-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  border: none;
+  background: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+}
+
+.nav-link a {
+  padding: 1rem;
+  color: #fe662e;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+}
