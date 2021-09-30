@@ -62,7 +62,6 @@ section {
 
 #hero h1 {
   font-size: 4rem;
-  margin-bottom: 2rem;
   color: var(--clr-primary);
 }
 
@@ -87,9 +86,23 @@ section {
   color: var(--clr-primary);
 }
 
+#hero .cta-btn {
+  padding: 1rem 3rem;
+  display: inline-block;
+  margin: 3rem 0 min(5vh, 3rem);
+
+  color: #fff;
+  background: var(--clr-primary);
+
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 99999px;
+}
+
 #hero h2 {
-  font-size: 1.7rem;
-  margin: 5rem 0 2rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .next-section-btn {
@@ -98,10 +111,10 @@ section {
   display: grid;
   place-content: center;
 
-  color: #fff;
   border-radius: 50%;
   text-decoration: none;
-  background: var(--clr-primary);
+  color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
 }
 
 #how-to-back {
