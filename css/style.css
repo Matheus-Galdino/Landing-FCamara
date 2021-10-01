@@ -48,9 +48,15 @@ nav {
 }
 
 section {
-  min-height: 95vh;
+  min-height: 50vh;
   padding: 2rem 3rem;
   text-align: center;
+}
+
+h2 {
+  font-size: 2.7rem;
+  margin-bottom: 2rem;
+  color: var(--clr-primary);
 }
 
 #hero {
@@ -58,6 +64,8 @@ section {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  min-height: 95vh;
 }
 
 #hero h1 {
@@ -109,14 +117,57 @@ section {
   background-color: #fdfdfd;
 }
 
-#how-to-back h2 {
-  font-size: 2.7rem;
+#protocols {
+  background-color: #fffbfb;
+}
+
+#protocols > p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-align: center;
   margin-bottom: 2rem;
+}
+
+.protocols-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.protocol {
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.protocol.blue {
+  background: #404099;
   color: var(--clr-primary);
 }
 
-#protocols {
-  background-color: red;
+.protocol.orange {
+  color: #404099;
+  background: var(--clr-primary);
+}
+
+.protocol img {
+  width: 100%;
+  max-width: 250px;
+}
+
+.protocol p {
+  padding: 1rem;
+  max-width: 30ch;
+  background: #fff;
+  margin: 1rem auto 0;
+  border-radius: 10px;
+
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .accordion {
