@@ -166,7 +166,7 @@ h2 {
 
   color: inherit;
   font-size: 1.6rem;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -176,7 +176,7 @@ h2 {
   cursor: pointer;
   overflow: hidden;
   padding: 1.5rem 1rem;
-  transition: all 0.2s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .accordion.active {
