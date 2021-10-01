@@ -12,7 +12,7 @@ nav {
   top: 0;
 
   height: 5vh;
-  background-color: #fff;
+  background-color: #ff5214;
   box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 0.1);
 }
 
@@ -40,9 +40,9 @@ nav {
 
 .nav-link a {
   padding: 1rem;
-  color: var(--clr-primary);
+  color: #fff;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 500;
   display: inline-block;
   text-decoration: none;
 }
@@ -62,6 +62,7 @@ section {
 
 #hero h1 {
   font-size: 4rem;
+  margin-bottom: 1rem;
   color: var(--clr-primary);
 }
 
@@ -72,6 +73,7 @@ section {
 #hero p {
   max-width: 45ch;
   font-size: 1.8rem;
+  text-align: justify;
   margin: 1.5rem 0 1rem;
 }
 
