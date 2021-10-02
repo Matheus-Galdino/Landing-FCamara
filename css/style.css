@@ -123,14 +123,6 @@ h2 {
   border: 2px solid var(--clr-primary);
 }
 
-#how-to-back {
-  background-color: #fdfdfd;
-}
-
-#protocols {
-  background-color: #fffbfb;
-}
-
 #protocols > p {
   font-weight: 500;
   font-size: 1.6rem;
@@ -194,10 +186,6 @@ h2 {
 
   border-radius: 1em;
   background: #f5f4fb;
-}
-
-.accordion:not(:last-of-type) {
-  margin-bottom: 1rem;
 }
 
 .accordion-title,
@@ -279,4 +267,18 @@ h2 {
 
 .hashtag {
   color: #7c74fc;
+}
+
+@media (max-width: 799px) {
+  .accordion:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .questions-list {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
 }
