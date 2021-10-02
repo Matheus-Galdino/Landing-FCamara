@@ -124,10 +124,12 @@ h2 {
 }
 
 #protocols > p {
+  margin: 0 auto;
+  max-width: 50ch;
   font-weight: 500;
-  font-size: 1.6rem;
   text-align: center;
   margin-bottom: 2rem;
+  font-size: clamp(1.6rem, 3vw, 2rem);
 }
 
 .protocols-list {
@@ -135,13 +137,17 @@ h2 {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
 
-  margin-top: 1rem;
+  margin: 1rem 0;
   list-style: none;
 }
 
 .protocol {
   padding: 2rem;
   border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .protocol.blue {
@@ -156,11 +162,14 @@ h2 {
 
 .protocol img {
   width: 100%;
+  height: 190px;
   max-width: 250px;
+  margin-bottom: auto;
 }
 
 .protocol p {
   padding: 1rem;
+  width: 100%;
   max-width: 30ch;
   background: #fff;
   margin: 1rem auto 0;
