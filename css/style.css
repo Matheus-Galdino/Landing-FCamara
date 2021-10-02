@@ -4,10 +4,6 @@ html {
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   position: sticky;
   top: 0;
 
@@ -16,8 +12,13 @@ nav {
   box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 0.1);
 }
 
-.logo {
-  max-width: 100px;
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  max-width: 1300px;
 }
 
 .theme-switch {
@@ -41,10 +42,15 @@ nav {
 .nav-link a {
   padding: 1rem;
   color: #fff;
-  font-size: 1.4rem;
   font-weight: 500;
   display: inline-block;
   text-decoration: none;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1300px;
 }
 
 section {
@@ -76,13 +82,14 @@ h2 {
 
 #hero img {
   width: 100%;
+  max-width: 600px;
 }
 
 #hero p {
   max-width: 45ch;
-  font-size: 1.8rem;
   text-align: justify;
   margin: 1.5rem 0 1rem;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
 }
 
 #hero p strong {
@@ -90,10 +97,12 @@ h2 {
 }
 
 #hero small {
+  display: block;
+  margin: 0 auto;
   max-width: 45ch;
   font-weight: 800;
-  font-size: 1.4rem;
   color: var(--clr-primary);
+  font-size: clamp(1.4rem, 3vw, 2rem);
 }
 
 #hero h2 {
@@ -107,6 +116,7 @@ h2 {
   display: grid;
   place-content: center;
 
+  margin: 0 auto;
   border-radius: 50%;
   text-decoration: none;
   color: var(--clr-primary);
@@ -262,9 +272,9 @@ h2 {
   background: var(--clr-primary);
 
   font-weight: 700;
-  font-size: 1.5rem;
   text-decoration: none;
   border-radius: 99999px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 .hashtag {
