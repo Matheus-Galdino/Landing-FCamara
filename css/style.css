@@ -21,17 +21,6 @@ nav {
   max-width: 1300px;
 }
 
-.theme-switch {
-  display: grid;
-  place-content: center;
-
-  width: 30px;
-  height: 30px;
-
-  border: none;
-  background: none;
-}
-
 .nav-links {
   display: flex;
   align-items: center;
