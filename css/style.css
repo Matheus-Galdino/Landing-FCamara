@@ -24,8 +24,6 @@ nav {
 .nav-links {
   display: flex;
   align-items: center;
-
-  list-style: none;
 }
 
 .nav-link a {
@@ -33,7 +31,6 @@ nav {
   color: #fff;
   font-weight: 500;
   display: inline-block;
-  text-decoration: none;
   font-size: clamp(1.4rem, 3vw, 1.8rem);
 }
 
@@ -94,11 +91,6 @@ h2 {
   font-size: clamp(1.4rem, 3vw, 2rem);
 }
 
-#hero h2 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-}
-
 .next-section-btn {
   width: 45px;
   height: 45px;
@@ -107,7 +99,6 @@ h2 {
 
   margin: 0 auto;
   border-radius: 50%;
-  text-decoration: none;
   color: var(--clr-primary);
   border: 2px solid var(--clr-primary);
 }
@@ -127,7 +118,6 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
 
   margin: 1rem 0;
-  list-style: none;
 }
 
 .protocol {
@@ -170,85 +160,6 @@ h2 {
   text-align: center;
 }
 
-.accordion {
-  max-height: 6rem;
-
-  cursor: pointer;
-  overflow: hidden;
-  padding: 1.5rem 1rem;
-  transition: all 0.3s ease-in;
-}
-
-.accordion.active {
-  max-height: 100rem;
-
-  border-radius: 1em;
-  background: #f5f4fb;
-}
-
-.accordion-title,
-.accordion-content {
-  display: grid;
-  column-gap: 2rem;
-  align-items: center;
-  justify-items: start;
-  grid-template-columns: 2.5rem 1fr;
-}
-
-.accordion-title {
-  min-height: 4rem;
-  pointer-events: none;
-}
-
-.accordion-title p {
-  font-weight: 600;
-  font-size: 1.5rem;
-  text-align: start;
-}
-
-.accordion-title .material-icons {
-  font-size: 3rem;
-  color: var(--clr-primary);
-}
-
-.accordion:not(.active) .remove {
-  display: none;
-}
-
-.accordion.active .add {
-  display: none;
-}
-
-.accordion.active .material-icons {
-  background: #fff;
-  border-radius: 50%;
-}
-
-.accordion .accordion-content {
-  max-height: 0;
-  transition: all 0.2s ease-in;
-}
-
-.accordion.active .accordion-content {
-  display: grid;
-  margin-top: 1rem;
-  max-height: 100rem;
-}
-
-.accordion-content p {
-  grid-column: 2 / 3;
-
-  text-align: start;
-  font-size: 1.6rem;
-  line-height: 1.5em;
-}
-
-.accordion-content .cta-btn {
-  margin-bottom: 0;
-  grid-column: 1 / 3;
-  justify-self: center;
-}
-
 .cta-btn {
   padding: 1rem 3rem;
   display: inline-block;
@@ -258,19 +169,12 @@ h2 {
   background: var(--clr-primary);
 
   font-weight: 700;
-  text-decoration: none;
   border-radius: 99999px;
   font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 .hashtag {
   color: #7c74fc;
-}
-
-@media (max-width: 799px) {
-  .accordion:not(:last-of-type) {
-    margin-bottom: 1rem;
-  }
 }
 
 @media (min-width: 800px) {
