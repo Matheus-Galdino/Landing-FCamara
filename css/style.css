@@ -130,12 +130,12 @@ h2 {
 }
 
 .protocol.blue {
-  background: #404099;
   color: var(--clr-primary);
+  background: var(--clr-secondary);
 }
 
 .protocol.orange {
-  color: #404099;
+  color: var(--clr-secondary);
   background: var(--clr-primary);
 }
 
