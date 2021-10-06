@@ -42,7 +42,8 @@ themeSwitch.addEventListener("click", () => {
 });
 
 window.onload = () => {
-  const isDarkMode = localStorage.getItem("isDarkMode") ?? false;
+  const isDarkMode = localStorage.getItem("isDarkMode") || window.matchMedia("(prefers-color-scheme: dark)").matches;
+
   if (isDarkMode) {
     document.body.classList.add("dark-mode");
     themeSwitch.classList.toggle("rotate");
