@@ -74,7 +74,7 @@ nav {
   color: #fff;
   font-weight: 500;
   display: inline-block;
-  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-size: clamp(1.6rem, 3vw, 1.8rem);
 }
 
 @media (min-width: 736px) {
