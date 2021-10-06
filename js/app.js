@@ -37,14 +37,14 @@ themeSwitch.addEventListener("click", () => {
 
   themeSwitch.innerHTML = `<span class="material-icons"> ${icon} </span>`;
 
-  if (isDarkMode) localStorage.setItem("isDarkMode", isDarkMode);
-  else localStorage.removeItem("isDarkMode");
+  localStorage.setItem("isDarkMode", isDarkMode);
 });
 
 window.onload = () => {
-  const isDarkMode = localStorage.getItem("isDarkMode") || window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const isDarkMode = localStorage.getItem("isDarkMode");
+  const userPrefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  if (isDarkMode) {
+  if (isDarkMode == "true" || (!isDarkMode && userPrefersDarkScheme)) {
     document.body.classList.add("dark-mode");
     themeSwitch.classList.toggle("rotate");
     themeSwitch.innerHTML = `<span class="material-icons"> nights_stay </span>`;
