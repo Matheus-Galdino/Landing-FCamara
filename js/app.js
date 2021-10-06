@@ -36,4 +36,16 @@ themeSwitch.addEventListener("click", () => {
   themeSwitch.classList.toggle("rotate");
 
   themeSwitch.innerHTML = `<span class="material-icons"> ${icon} </span>`;
+
+  if (isDarkMode) localStorage.setItem("isDarkMode", isDarkMode);
+  else localStorage.removeItem("isDarkMode");
 });
+
+window.onload = () => {
+  const isDarkMode = localStorage.getItem("isDarkMode") ?? false;
+  if (isDarkMode) {
+    document.body.classList.add("dark-mode");
+    themeSwitch.classList.toggle("rotate");
+    themeSwitch.innerHTML = `<span class="material-icons"> nights_stay </span>`;
+  }
+};
