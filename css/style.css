@@ -1,3 +1,5 @@
+@import url(nav.css);
+
 :root {
   --bg-clr: #fff;
   --text-clr: #000;
@@ -10,15 +12,6 @@ html {
   scroll-padding-top: 5vh;
 }
 
-nav {
-  position: sticky;
-  top: 0;
-
-  height: 5vh;
-  background-color: var(--nav-bg);
-  box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 0.1);
-}
-
 body {
   background: var(--bg-clr);
 }
@@ -29,28 +22,6 @@ body.dark-mode {
   --nav-bg: #1b1b1b;
   --next-sect-clr: #fff;
   --accordion-bg: #1b1b1b;
-}
-
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  margin: 0 auto;
-  max-width: 1300px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-}
-
-.nav-link a {
-  padding: 1rem;
-  color: #fff;
-  font-weight: 500;
-  display: inline-block;
-  font-size: clamp(1.4rem, 3vw, 1.8rem);
 }
 
 main {
