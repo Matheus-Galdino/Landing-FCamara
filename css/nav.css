@@ -58,6 +58,7 @@ nav {
   min-height: 50vh;
 
   display: flex;
+  gap: 1rem;
   align-items: center;
 
   padding-top: 10rem;
