@@ -11,6 +11,7 @@
   outline: none;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  transition: color 0.2s ease-in, background 0.3s ease-in;
 }
 
 button {

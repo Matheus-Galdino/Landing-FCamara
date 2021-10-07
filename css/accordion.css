@@ -11,7 +11,7 @@
   max-height: 100rem;
 
   border-radius: 1em;
-  background: #f5f4fb;
+  background: var(--accordion-bg);
 }
 
 .accordion-title,
@@ -24,7 +24,7 @@
 }
 
 .accordion-title {
-  min-height: 4rem;
+  min-height: 5rem;
   pointer-events: none;
 }
 
@@ -32,6 +32,7 @@
   font-weight: 600;
   font-size: 1.5rem;
   text-align: start;
+  color: var(--text-clr);
 }
 
 .accordion-title .material-icons {
@@ -69,6 +70,7 @@
   text-align: start;
   font-size: 1.6rem;
   line-height: 1.5em;
+  color: var(--text-clr);
 }
 
 .accordion-content .cta-btn {
