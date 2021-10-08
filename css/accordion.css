@@ -20,6 +20,7 @@
   column-gap: 2rem;
   align-items: center;
   justify-items: start;
+  pointer-events: none;
   grid-template-columns: 2.5rem 1fr;
 }
 
