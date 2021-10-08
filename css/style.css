@@ -25,7 +25,7 @@ body.dark-mode {
   --accordion-bg: #1b1b1b;
 }
 
-main {
+.container {
   margin: 0 auto;
   max-width: 1300px;
 }
