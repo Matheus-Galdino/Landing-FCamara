@@ -93,6 +93,9 @@ h2 {
   border-radius: 50%;
   color: var(--next-sect-clr, var(--clr-primary));
   border: 2px solid var(--next-sect-clr, var(--clr-primary));
+
+  animation: bounce 0.5s ease-in-out;
+  animation-iteration-count: 5;
 }
 
 #protocols > p {
@@ -164,6 +167,11 @@ h2 {
   font-weight: 700;
   border-radius: 99999px;
   font-size: clamp(1.5rem, 3vw, 2rem);
+  transition: background 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+  background: #eb4001;
 }
 
 .hashtag {
@@ -175,5 +183,17 @@ h2 {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

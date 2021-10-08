@@ -78,8 +78,28 @@ nav {
   padding: 1rem;
   color: #fff;
   font-weight: 500;
+  position: relative;
   display: inline-block;
   font-size: clamp(1.6rem, 3vw, 1.8rem);
+}
+
+.nav-link a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 3px;
+  background: #fff;
+  border-radius: 20px;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-link a:hover::before {
+  transform: scale(1);
 }
 
 #theme-switch {
